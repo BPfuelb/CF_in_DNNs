@@ -1,0 +1,39 @@
+Dataset: Fruits Dataset
+  * pickle file name: Fruits.pkl.gz
+  * shape: (100, 100, 3)
+  * number train examples: 32426
+  * number test examples: 10903
+  * num_classes: 10
+  * validate shape: False
+ creation log:
+  * data training shape: (6148, 30000)
+  * labels training shape: (6148, 10)
+  * data test shape: (2052, 30000)
+  * labels test shape: (2052, 10)
+  * elements per class (training):
+   + min(492.0), max(738.0), max diff (246.0), percent from all (4.00%)
+    - class 0: 738.0
+    - class 1: 738.0
+    - class 2: 738.0
+    - class 3: 738.0
+    - class 4: 735.0
+    - class 5: 493.0
+    - class 6: 492.0
+    - class 7: 492.0
+    - class 8: 492.0
+    - class 9: 492.0
+
+  * elements per class (training):
+   + min(163.0), max(249.0), max diff (86.0), percent from all (4.19%)
+    - class 0: 246.0
+    - class 1: 246.0
+    - class 2: 246.0
+    - class 3: 246.0
+    - class 4: 249.0
+    - class 5: 163.0
+    - class 6: 164.0
+    - class 7: 164.0
+    - class 8: 164.0
+    - class 9: 164.0
+
+ validation ok...everything seems good

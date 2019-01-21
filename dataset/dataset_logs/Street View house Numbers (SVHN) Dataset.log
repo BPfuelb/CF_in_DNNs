@@ -1,0 +1,39 @@
+Dataset: Street View house Numbers (SVHN) Dataset
+  * pickle file name: SVHN.pkl.gz
+  * shape: (32, 32, 3)
+  * number train examples: 73257
+  * number test examples: 26032
+  * num_classes: 10
+  * validate shape: True
+ creation log:
+  * data training shape: (73257, 3072)
+  * labels training shape: (73257, 10)
+  * data test shape: (26032, 3072)
+  * labels test shape: (26032, 10)
+  * elements per class (training):
+   + min(4659.0), max(13861.0), max diff (9202.0), percent from all (12.56%)
+    - class 0: 13861.0
+    - class 1: 10585.0
+    - class 2: 8497.0
+    - class 3: 7458.0
+    - class 4: 6882.0
+    - class 5: 5727.0
+    - class 6: 5595.0
+    - class 7: 5045.0
+    - class 8: 4659.0
+    - class 9: 4948.0
+
+  * elements per class (training):
+   + min(1595.0), max(5099.0), max diff (3504.0), percent from all (13.46%)
+    - class 0: 5099.0
+    - class 1: 4149.0
+    - class 2: 2882.0
+    - class 3: 2523.0
+    - class 4: 2384.0
+    - class 5: 1977.0
+    - class 6: 2019.0
+    - class 7: 1660.0
+    - class 8: 1595.0
+    - class 9: 1744.0
+
+ validation ok...everything seems good

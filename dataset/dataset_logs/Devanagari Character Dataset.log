@@ -1,0 +1,39 @@
+Dataset: Devanagari Character Dataset
+  * pickle file name: Devanagari.pkl.gz
+  * shape: (32, 32, 1)
+  * number train examples: 82800
+  * number test examples: 9200
+  * num_classes: 10
+  * validate shape: False
+ creation log:
+  * data training shape: (18000, 1024)
+  * labels training shape: (18000, 10)
+  * data test shape: (2000, 1024)
+  * labels test shape: (2000, 10)
+  * elements per class (training):
+   + min(1772.0), max(1825.0), max diff (53.0), percent from all (0.29%)
+    - class 0: 1792.0
+    - class 1: 1810.0
+    - class 2: 1806.0
+    - class 3: 1825.0
+    - class 4: 1805.0
+    - class 5: 1786.0
+    - class 6: 1811.0
+    - class 7: 1772.0
+    - class 8: 1803.0
+    - class 9: 1790.0
+
+  * elements per class (training):
+   + min(175.0), max(228.0), max diff (53.0), percent from all (2.65%)
+    - class 0: 208.0
+    - class 1: 190.0
+    - class 2: 194.0
+    - class 3: 175.0
+    - class 4: 195.0
+    - class 5: 214.0
+    - class 6: 189.0
+    - class 7: 228.0
+    - class 8: 197.0
+    - class 9: 210.0
+
+ validation ok...everything seems good

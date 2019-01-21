@@ -1,0 +1,39 @@
+Dataset: CIFAR10
+  * pickle file name: CIFAR10.pkl.gz
+  * shape: (32, 32, 3)
+  * number train examples: 50000
+  * number test examples: 10000
+  * num_classes: 10
+  * validate shape: True
+ creation log:
+  * data training shape: (50000, 3072)
+  * labels training shape: (50000, 10)
+  * data test shape: (10000, 3072)
+  * labels test shape: (10000, 10)
+  * elements per class (training):
+   + min(5000.0), max(5000.0), max diff (0.0), percent from all (0.00%)    
+    - class (0,): 5000.0
+    - class (1,): 5000.0
+    - class (2,): 5000.0
+    - class (3,): 5000.0
+    - class (4,): 5000.0
+    - class (5,): 5000.0
+    - class (6,): 5000.0
+    - class (7,): 5000.0
+    - class (8,): 5000.0
+    - class (9,): 5000.0
+
+  * elements per class (training):
+   + min(1000.0), max(1000.0), max diff (0.0), percent from all (0.00%)    
+    - class (0,): 1000.0
+    - class (1,): 1000.0
+    - class (2,): 1000.0
+    - class (3,): 1000.0
+    - class (4,): 1000.0
+    - class (5,): 1000.0
+    - class (6,): 1000.0
+    - class (7,): 1000.0
+    - class (8,): 1000.0
+    - class (9,): 1000.0
+
+ validation ok...everything seems good

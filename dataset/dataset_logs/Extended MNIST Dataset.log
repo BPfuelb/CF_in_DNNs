@@ -1,0 +1,39 @@
+Dataset: Extended MNIST Dataset
+  * pickle file name: EMNIST.pkl.gz
+  * shape: (28, 28, 1)
+  * number train examples: 697932
+  * number test examples: 116323
+  * num_classes: 10
+  * validate shape: False
+ creation log:
+  * data training shape: (345035, 784)
+  * labels training shape: (345035, 10)
+  * data test shape: (57918, 784)
+  * labels test shape: (57918, 10)
+  * elements per class (training):
+   + min(31416.0), max(38374.0), max diff (6958.0), percent from all (2.02%)
+    - class 0: 38374.0
+    - class 1: 35754.0
+    - class 2: 35143.0
+    - class 3: 34585.0
+    - class 4: 34232.0
+    - class 5: 34203.0
+    - class 6: 33946.0
+    - class 7: 33847.0
+    - class 8: 33535.0
+    - class 9: 31416.0
+
+  * elements per class (training):
+   + min(5190.0), max(6330.0), max diff (1140.0), percent from all (1.97%)
+    - class 0: 6330.0
+    - class 1: 6139.0
+    - class 2: 5969.0
+    - class 3: 5778.0
+    - class 4: 5705.0
+    - class 5: 5869.0
+    - class 6: 5633.0
+    - class 7: 5686.0
+    - class 8: 5619.0
+    - class 9: 5190.0
+
+ validation ok...everything seems good

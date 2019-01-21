@@ -1,0 +1,39 @@
+Dataset: MADBase Handwritten Digits Dataset
+  * pickle file name: MADBase.pkl.gz
+  * shape: (28, 28, 1)
+  * number train examples: 60000
+  * number test examples: 10000
+  * num_classes: 10
+  * validate shape: True
+ creation log:
+  * data training shape: (60000, 784)
+  * labels training shape: (60000, 10)
+  * data test shape: (10000, 784)
+  * labels test shape: (10000, 10)
+  * elements per class (training):
+   + min(6000.0), max(6000.0), max diff (0.0), percent from all (0.00%)
+    - class 0: 6000.0
+    - class 1: 6000.0
+    - class 2: 6000.0
+    - class 3: 6000.0
+    - class 4: 6000.0
+    - class 5: 6000.0
+    - class 6: 6000.0
+    - class 7: 6000.0
+    - class 8: 6000.0
+    - class 9: 6000.0
+
+  * elements per class (training):
+   + min(1000.0), max(1000.0), max diff (0.0), percent from all (0.00%)
+    - class 0: 1000.0
+    - class 1: 1000.0
+    - class 2: 1000.0
+    - class 3: 1000.0
+    - class 4: 1000.0
+    - class 5: 1000.0
+    - class 6: 1000.0
+    - class 7: 1000.0
+    - class 8: 1000.0
+    - class 9: 1000.0
+
+ validation ok...everything seems good

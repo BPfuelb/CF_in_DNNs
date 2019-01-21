@@ -1,0 +1,37 @@
+Dataset: MNIST
+  * pickle file name: MNIST.pkl.gz
+  * shape: (28, 28, 1)
+  * number train examples: 55000
+  * number test examples: 10000
+  * num_classes: 10
+  * validate shape: True
+ creation log:
+  * data training shape: (55000, 784)
+  * labels training shape: (55000, 10)
+  * data test shape: (10000, 784)
+  * labels test shape: (10000, 10)
+  * elements per class (training):
+   + min(4987.0), max(6179.0), max diff (1192.0), percent from all (2.17%)    - class (0,): 5444.0
+    - class (1,): 6179.0
+    - class (2,): 5470.0
+    - class (3,): 5638.0
+    - class (4,): 5307.0
+    - class (5,): 4987.0
+    - class (6,): 5417.0
+    - class (7,): 5715.0
+    - class (8,): 5389.0
+    - class (9,): 5454.0
+
+  * elements per class (training):
+   + min(892.0), max(1135.0), max diff (243.0), percent from all (2.43%)    - class (0,): 980.0
+    - class (1,): 1135.0
+    - class (2,): 1032.0
+    - class (3,): 1010.0
+    - class (4,): 982.0
+    - class (5,): 892.0
+    - class (6,): 958.0
+    - class (7,): 1028.0
+    - class (8,): 974.0
+    - class (9,): 1009.0
+
+ validation ok...everything seems good

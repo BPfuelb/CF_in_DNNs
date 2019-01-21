@@ -1,0 +1,39 @@
+Dataset: CUB_200_2011
+  * pickle file name: CUB200.pkl.gz
+  * shape: (100, 100, 3)
+  * number train examples: 70000
+  * number test examples: 10000
+  * num_classes: 10
+  * validate shape: False
+ creation log:
+  * data training shape: (540, 30000)
+  * labels training shape: (540, 10)
+  * data test shape: (60, 30000)
+  * labels test shape: (60, 10)
+  * elements per class (training):
+   + min(51.0), max(57.0), max diff (6.0), percent from all (1.11%)
+    - class 0: 53.0
+    - class 1: 53.0
+    - class 2: 52.0
+    - class 3: 57.0
+    - class 4: 56.0
+    - class 5: 51.0
+    - class 6: 54.0
+    - class 7: 57.0
+    - class 8: 55.0
+    - class 9: 52.0
+
+  * elements per class (training):
+   + min(3.0), max(9.0), max diff (6.0), percent from all (10.00%)
+    - class 0: 7.0
+    - class 1: 7.0
+    - class 2: 8.0
+    - class 3: 3.0
+    - class 4: 4.0
+    - class 5: 9.0
+    - class 6: 6.0
+    - class 7: 3.0
+    - class 8: 5.0
+    - class 9: 8.0
+
+ validation ok...everything seems good

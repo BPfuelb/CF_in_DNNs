@@ -1,0 +1,39 @@
+Dataset: NotMNIST
+  * pickle file name: NotMNIST.pkl.gz
+  * shape: (28, 28, 1)
+  * number train examples: 529114
+  * number test examples: 18724
+  * num_classes: 10
+  * validate shape: True
+ creation log:
+  * data training shape: (529114, 784)
+  * labels training shape: (529114, 10)
+  * data test shape: (18724, 784)
+  * labels test shape: (18724, 10)
+  * elements per class (training):
+   + min(52909.0), max(52912.0), max diff (3.0), percent from all (0.00%)    
+    - class (0,): 52909.0
+    - class (1,): 52911.0
+    - class (2,): 52912.0
+    - class (3,): 52911.0
+    - class (4,): 52912.0
+    - class (5,): 52912.0
+    - class (6,): 52912.0
+    - class (7,): 52912.0
+    - class (8,): 52912.0
+    - class (9,): 52911.0
+
+  * elements per class (training):
+   + min(1872.0), max(1873.0), max diff (1.0), percent from all (0.01%)    
+    - class (0,): 1872.0
+    - class (1,): 1873.0
+    - class (2,): 1873.0
+    - class (3,): 1873.0
+    - class (4,): 1873.0
+    - class (5,): 1872.0
+    - class (6,): 1872.0
+    - class (7,): 1872.0
+    - class (8,): 1872.0
+    - class (9,): 1872.0
+
+ validation ok...everything seems good

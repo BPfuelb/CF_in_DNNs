@@ -1,19 +1,76 @@
-# Analysis of Catastrophic Forgetting in Deep Neural Networks
-* We have analysed 4 types of algorithms to investigate Catastrophic Forgetting:
-  * Elastic Weight Consolidation EWC (https://github.com/stokesj/EWC)
-  * Fully-Connected NNs (with and without dropout)
-  * Convolutional NNs (with and without dropout)
-  * Local Winner Takes All  (with and without dropout)
+# A comprehensive, application-oriented study of catastrophic forgetting in DNNs
 
-Usage (Linux/bash): source startScripts.bash <model> <parallelruns>
-  starts <parallelruns> bash scripts, each executing its part of the experiments
-  calls the right python scripts in the right order
+This repository contains the code base for models, experiment creation and evaluation. 
 
-analysis: python findBestRun.py <model> realistic|prescient
-  takes a bunch if log files that are supposed to be in ./, and spits out the performnance matrix (model/params + task are indices, entry is evaluation result)
+Dependencies: python3, numpy, tensorflow 1.7, scipy, matplotlib, and more...
 
-visualization; python plotOneExp.py <expID>
-  generates a file f.png that visualizes an experimental run. This run can be copied from the results of findBestRun.py
+PYTHONPATH: must be set to absolute path of main directory, e.g.
+`export PYTHONPATH=$PYTHONPATH:$(pwd)`
+
+Used models: (D-)FC, (D-)CONV, LWTA, EWC, IMM
 
 
-In the tmp subfolder zipsIjcnnLatest are zipfiles with logs that can be used for tests of analysis/visualization, just unzip them first!
+# Usage
+1. create a experiment batch file with the doExperiments script, e.g., `python3 doExperiments.py --exp FC`
+2. process all created experiments (os depended parameters like pathes etc.)
+3. use the `experiment_processor.py` to do a model selection based on the results (csv files) of the training phase, e.g., `python3 experiment_processor --path <dir with experiment output files> --evalMode realistic_first`
+4. process the recreated experiments for re-training phase
+5. evaluate the output of the re-trained models with `python3 experiment_processor --path <dir with experiment output files> --evalMode realistic_second`
+
+# Structure
+
+Rough overview of the repository:
+
+ * [Dataset](./dataset/README.md) contains code to recreate the datasets for the experiments
+ * [Eval](./eval/README.md) contains code for evaluation of the outputs of the experiments (an recreate experiments for second run)
+ * [DNN_code](./dnn_code/README.md) contains code for the models: (D-)FC, (D-)CONV and LWTA
+ * [EWC_code](./ewc_code/README.md) contains code for the EWC model
+ * [IMM_code](./imm_code/README.md) contains code for the IMM model
+ 
+## defaultParser.py
+
+Contains the default parser which is used by all experiments. 
+Model specific parameters could be added by experiment.
+
+## doExperiments.py
+
+This code create batch files which could be processed singly if the local mode (in the source code) is activated. 
+Otherwise an operating system independent batch file is created which we process distributed by our own distribution system (not public available). 
+This script is also used to recreate the experiments for the re-training phase.
+Therefore the fixed model parameters were passed as additional parameter.
+From this, the varied re-train parameters, respectively the experiements with the hyper-parameters were created as new experiment batch file.   
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
