@@ -1,12 +1,12 @@
 \documentclass{article}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{bibentry}
 \nobibliography*
 
-\title{A 2019 survey of continual/incremental/lifelong learning algorithms}
+\title{A 2019 survey of continual/incremental/lifelong learning algorithms, with a focus on suitability under application constraints}
 
 \begin{document}
-%\maketitle
+\maketitle
 \section{EWC and EWC-like}
 \textbf{Require knowledge of future tasks for tuning the regularization parameter $\lambda$. Plus, it is not clear how model selection is performed in many of these works, but probably in hindsight which again requires knowledge of future sub-tasks}. 
 \begin{itemize}
@@ -18,13 +18,13 @@
 \end{itemize}
 
 \section{Incremental Moment Matching}
-\textbf{Sensitive to balancing parameter $\alpha$ and L2-transfer parameter $\lambda$. Requires retention of all past tasks to find a good balancing parameter $\alpha$ and knowledge of future tasks to find a good value for $\lambda$.}
+\textbf{Sensitive to balancing parameter $\alpha$ and L2-transfer parameter $\lambda$. Requires retention of past tasks to find a good balancing parameter $\alpha$ and knowledge of future tasks to find a good value for $\lambda$.}
 \begin{itemize}
 \item \bibentry{lee2017overcoming}
 \end{itemize}
 %
 \section{Modular networks}
-\textbf{Intrinsically require to know sub-task label at test time. All approaches except ExpertGate\cite{aljundi2017expertGate} ignore this. ExpertGate addresses problem by training additional sub-task classifiers but we found this to be problematic, see \cite{gepperthincremental}.}
+\textbf{Intrinsically require to know sub-task label at test time. All approaches except ExpertGate \cite{aljundi2017expertGate} ignore this. ExpertGate addresses problem by training additional sub-task classifiers but we found this to be problematic, see \cite{gepperthincremental}.}
 \begin{itemize}
 \item \bibentry{aljundi2017expertGate}
 \item \bibentry{yoon2017lifelong}
@@ -33,27 +33,30 @@
 \item \bibentry{fernando2017pathnet}
 \item \bibentry{gepperthincremental}
 \item \bibentry{serra2018overcoming}
+\item \bibentry{li2018learning}
 \end{itemize}
 
 
 \section{Regularization}
-\textbf{No conceptual issues with this model, although heavy use of permuted MNIST is made.}
+\textbf{No conceptual issues with this model (although heavy use of permuted MNIST , and no statements about model selection are made).}
 \begin{itemize}
 \item \bibentry{aljundi2018selfless}
 \end{itemize}
 
 \section{Replay}
-\textbf{No conceptual issues with this model except that amount of samples that must be generated at task $n$ is at least proportional to $n$, which renders life-long learning impossible.}
+\textbf{No conceptual issues with these models except that amount of samples that must be generated at task $n$ is at least proportional to $n$, which renders life-long learning difficult.}
 \begin{itemize}
 \item \bibentry{shin2017continual}
 \item \bibentry{kemker2017fearnet}
 \end{itemize}
 
 \section{Distillation}
-\textbf{Distillation is a powerful tool but makes assumptions on data, i.e., new sub-tasks contain samples of old data.}
+\textbf{Distillation is a powerful tool but makes assumptions on data, i.e., new sub-tasks contain samples of old data.
+This is ok in \cite{kim2018keep} since this models assumes that sub-task are just chunks of the same singe-task learning problem.  Furthermore, \cite{li2018learning} requires to know the sub-task label at test time to select the correct set of output weights (not sure about \cite{kim2018keep})}.
 \begin{itemize}
 \item \bibentry{shmelkov2017incremental}
 \item \bibentry{li2018learning}
+\item \bibentry{kim2018keep}
 \end{itemize}
 
 \section{Dual-memory}
@@ -67,7 +70,7 @@
 \nocite{*}
 
 \clearpage
-\bibliographystyle{plainnat}
+\bibliographystyle{abbrv}
 \bibliography{lll}
 
 \end{document}
