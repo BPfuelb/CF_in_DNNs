@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+\title{A 2019 survey of continual/incremental/lifelong learning algorithms}
+
+\begin{document}
+%\maketitle
+\section{EWC and EWC-like}
+\textbf{Require knowledge of future tasks for tuning the regularization parameter $\lambda$. Plus, it is not clear how model selection is performed in many of these works, but probably in hindsight which again requires knowledge of future sub-tasks}. 
+\begin{itemize}
+\item \bibentry{kirkpatrick2017overcoming}
+\item \bibentry{liu2018rotate}
+\item \bibentry{aljundi2018memory}
+\item \bibentry{chaudhry2018riemannian}
+\item \bibentry{gepperth2019matrix}
+\end{itemize}
+
+\section{Incremental Moment Matching}
+\textbf{Sensitive to balancing parameter $\alpha$ and L2-transfer parameter $\lambda$. Requires retention of all past tasks to find a good balancing parameter $\alpha$ and knowledge of future tasks to find a good value for $\lambda$.}
+\begin{itemize}
+\item \bibentry{lee2017overcoming}
+\end{itemize}
+%
+\section{Modular networks}
+\textbf{Intrinsically require to know sub-task label at test time. All approaches except ExpertGate\cite{aljundi2017expertGate} ignore this. ExpertGate addresses problem by training additional sub-task classifiers but we found this to be problematic, see \cite{gepperthincremental}.}
+\begin{itemize}
+\item \bibentry{aljundi2017expertGate}
+\item \bibentry{yoon2017lifelong}
+\item \bibentry{mallya2018packnet}
+\item \bibentry{rusu2016progressive}
+\item \bibentry{fernando2017pathnet}
+\item \bibentry{gepperthincremental}
+\item \bibentry{serra2018overcoming}
+\end{itemize}
+
+
+\section{Regularization}
+\textbf{No conceptual issues with this model, although heavy use of permuted MNIST is made.}
+\begin{itemize}
+\item \bibentry{aljundi2018selfless}
+\end{itemize}
+
+\section{Replay}
+\textbf{No conceptual issues with this model except that amount of samples that must be generated at task $n$ is at least proportional to $n$, which renders life-long learning impossible.}
+\begin{itemize}
+\item \bibentry{shin2017continual}
+\item \bibentry{kemker2017fearnet}
+\end{itemize}
+
+\section{Distillation}
+\textbf{Distillation is a powerful tool but makes assumptions on data, i.e., new sub-tasks contain samples of old data.}
+\begin{itemize}
+\item \bibentry{shmelkov2017incremental}
+\item \bibentry{li2018learning}
+\end{itemize}
+
+\section{Dual-memory}
+\textbf{No issues with these, although the architectures are very complex and contain many tunable parameters of unclear impact.}
+\begin{itemize}
+\item \bibentry{rebuffi2017icarl}
+\item \bibentry{gepperth2016bio}
+\item \bibentry{kemker2017fearnet}
+\end{itemize}
+
+\nocite{*}
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{lll}
+
+\end{document}
