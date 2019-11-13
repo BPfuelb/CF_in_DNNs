@@ -1,4 +1,5 @@
 # A comprehensive, application-oriented study of catastrophic forgetting in DNNs
+Paper: https://arxiv.org/abs/1905.08101
 
 This repository contains the code base for models, experiment creation and evaluation. 
 
