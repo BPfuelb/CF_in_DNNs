@@ -41,8 +41,8 @@ Therefore the fixed model parameters were passed as additional parameter.
 From this, the varied re-train parameters, respectively the experiements with the hyper-parameters were created as new experiment batch file.   
 
  
- 
- 
+ # Catastrophic forgetting: still a problem for DNNs
+ Paper: https://arxiv.org/abs/1905.08077 (Tag v2.0)
  
  
  
